@@ -42,7 +42,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #define MATRIX_ROW_PINS { B0, B1, B2, B3 }
 #define MATRIX_COL_PINS { C2, C3, C4, C5, C6, C7, A5, A4, A3, A2, A1, A0 }
-#define UNUSED_PINS
+#define UNUSED_PINS { A6, A7, D0, D1, D5, D6, D7 }
 
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -53,7 +53,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    define RGBLIGHT_HUE_STEP 8
 #    define RGBLIGHT_SAT_STEP 8
 #    define RGBLIGHT_VAL_STEP 8
-#    define RGBLIGHT_LIMIT_VAL 255 /* The maximum brightness level */
+#    define RGBLIGHT_LIMIT_VAL 64 /* The maximum brightness level */
 #    define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
 #    define RGBLIGHT_LAYERS /* Enable lighting layers */
 /*== all animations enable ==*/
@@ -103,7 +103,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * power-up.
  *
  */
-#define FORCE_NKRO
+//#define FORCE_NKRO
 
 /*
  * Feature disable options
@@ -111,10 +111,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 /* disable debug print */
-#define NO_DEBUG
+//#define NO_DEBUG
 
 /* disable print */
-#define NO_PRINT
+//#define NO_PRINT
 
 /* disable action features */
 //#define NO_ACTION_LAYER
